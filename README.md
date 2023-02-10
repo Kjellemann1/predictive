@@ -1,9 +1,20 @@
 # predictive
-Functions used in Predictive Analytics with R <br>
+Functions used in Predictive Analytics with R
+
+<br>
+<br>
+
+## Installation
+devtools::install_github('Kjellemann1/predictive')
+
+<br>
+<br>
+
+## Functions
 
 <br>
 
-## knn(x0, x, y, k)
+### **knn(x0, x, y, k)**
 Calculates K nearest neighbours for one variable <br>
 - x0 : observation you are trying to predict
 - x : observations used to predict
@@ -12,8 +23,8 @@ Calculates K nearest neighbours for one variable <br>
 
 <br>
 
-## bootstrap(B, x, replacement = TRUE)
-Returns a vector of length B randomly sampled from x
+### **bootstrap(B, x, replacement = TRUE)**
+Returns a vector of length B randomly sampled from x <br>
 - B : number of samples
 - x : sampling variable
 - replacement : (by default TRUE) whether or not to use replacement
