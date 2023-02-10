@@ -1,6 +1,8 @@
 # predictive
 Functions used in Predictive Analytics with R
 
+<br>
+
 ### Installation
     devtools::install_github('Kjellemann1/predictive')
 
