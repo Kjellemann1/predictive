@@ -1,4 +1,4 @@
-# Predictive
+# predictive
 Functions used in Predictive Analytics with R <br>
 
 <br>
