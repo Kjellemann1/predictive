@@ -16,8 +16,4 @@ Calculates K nearest neighbours for one variable <br>
 Returns a vector of length B randomly sampled from x
 - B : number of samples
 - x : sampling variable
-<<<<<<< HEAD
 - replacement : (by default TRUE) whether or not to use replacement
-=======
-- replacement (DEFAULT = TRUE) : with or without replacement
->>>>>>> 904ff978abd134b868b2c40d7eccbcf4b79e6070
