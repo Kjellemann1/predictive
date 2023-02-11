@@ -3,11 +3,8 @@ Functions used in Predictive Analytics with R
 
 <br>
 
-### Installation
+### Install
     devtools::install_github('Kjellemann1/predictive')
-
-### Use
-    library(predictive)
 
 <br>
 
