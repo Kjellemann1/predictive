@@ -1,9 +1,11 @@
 # **predictive**  
 Functions used in Predictive Analytics with R at NHH
+<br></br>
 ## **Install**
 ```R
 devtools::install_github('Kjellemann1/predictive')  
 ```
+<br></br>
 ## **Functions**  
 ### **knn()**  
 Predict using k nearest neighbour on one variable  
@@ -23,4 +25,7 @@ Split dataframe into training and test data
 *split_train_test(df, train_frac = 0.7)*
 - df : dataframe you want to split
 - train_frac : (default: 0.7) the fraction of the data you want in training data
+<br></br>
+## **Dependencies**
+dplyr
 
