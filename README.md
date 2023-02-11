@@ -45,4 +45,6 @@ Split dataframe into training and test data
 <br></br>
 
 ## **Dependencies**
-dplyr package
+```R
+install.packages('dplyr')
+```
