@@ -1,6 +1,6 @@
 #' knn_test
 #'
-#' @description calculates predictions for each value in test data
+#' @description Calculates predictions for each value in test data using knn()
 #'
 #' @param test_x0 test data column
 #' @param train_x train data column

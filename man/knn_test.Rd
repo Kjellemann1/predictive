@@ -19,7 +19,7 @@ knn_test(test_x0, train_x, train_y, k)
 vector with predictions
 }
 \description{
-calculates predictions for each value in test data
+Calculates predictions for each value in test data using knn()
 }
 \examples{
 Using the palmerpenguins dataset
