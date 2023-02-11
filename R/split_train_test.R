@@ -4,6 +4,7 @@
 #'
 #' @param df dataframe you want to split
 #' @param train_frac (default: 0.7) the fraction of the data you want in training data
+#' @param keep_id (default: TRUE) whether or not to keep split_train_test_id column in returned dataframes
 #'
 #' @return list containing two dataframes: train and test
 #'
@@ -16,9 +17,13 @@
 #'
 #' @export
 #' @name split_train_test
-split_train_test <- function(df, train_frac = 0.7) {
-	df$id = 1:base::NROW(df)
+split_train_test <- function(df, train_frac = 0.7, keep_id = TRUE) {
+	df$split_train_test_id = 1:base::NROW(df)
 	train <- df %>% dplyr::sample_frac(train_frac)
-	test <- dplyr::anti_join(df, train, by = 'id')
+	test <- dplyr::anti_join(df, train, by = 'split_train_test_id')
+	if (keep_id == FALSE) {
+		train <- train %>% select(-split_train_test_id)
+		test <- test %>% select(-split_train_test_id)
+	}
 	return(list(train = train, test = test))
 }

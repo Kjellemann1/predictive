@@ -22,10 +22,11 @@ Resampling using the bootstrap method
 - replacement : (default: TRUE) whether or not to use replacement
 ### **split_train_test()**
 Split dataframe into training and test data  
-*split_train_test(df, train_frac = 0.7)*
+*split_train_test(df, train_frac = 0.7, keep_id = TRUE)*
 - df : dataframe you want to split
 - train_frac : (default: 0.7) the fraction of the data you want in training data
+- keep_id : (default: TRUE) whether or not to keep split_train_test_id column in returned dataframes  
 <br></br>
 ## **Dependencies**
-dplyr
+dplyr package
 
