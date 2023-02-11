@@ -21,7 +21,7 @@ Predict using k nearest neighbour on one variable
 - k : k nearest neighbours to consider
 
 ### **knn_test()**  
-Calculates predictions for each value in test data using knn()
+Calculates predictions for each value in test data using knn()  
 *knn_test(test_x0, train_x, train_y, k)*  
 - test_x0 : test data column
 - train_x : train data column
@@ -46,4 +46,3 @@ Split dataframe into training and test data
 
 ## **Dependencies**
 dplyr package
-
