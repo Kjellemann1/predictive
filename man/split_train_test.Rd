@@ -17,8 +17,8 @@ Split dataframe into training and test data
 \examples{
 Splitting the dataframe auto, with 80\% in train and 20\% in test
 
-result <- split_train_test(auto, train_frac = 0.8)
-train <- result$train
-test <- result$test
+split <- split_train_test(auto, train_frac = 0.8)
+train <- split$train
+test <- split$test
 
 }
