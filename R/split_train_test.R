@@ -16,7 +16,7 @@
 #'
 #' @export
 #' @name split_train_test
-library(dplyr)
+require(dplyr)
 split_train_test <- function(df, train_frac = 0.7) {
 	df$id = 1:base::NROW(df)
 	train <- df %>% dplyr::sample_frac(train_frac)
