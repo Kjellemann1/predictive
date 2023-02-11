@@ -22,8 +22,8 @@ split_train_test <- function(df, train_frac = 0.7, keep_id = TRUE) {
 	train <- df %>% dplyr::sample_frac(train_frac)
 	test <- dplyr::anti_join(df, train, by = 'split_train_test_id')
 	if (keep_id == FALSE) {
-		train <- train %>% select(-split_train_test_id)
-		test <- test %>% select(-split_train_test_id)
+		train <- train %>% dplyr::select(-split_train_test_id)
+		test <- test %>% dplyr::select(-split_train_test_id)
 	}
 	return(list(train = train, test = test))
 }
