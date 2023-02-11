@@ -2,7 +2,7 @@
 % Please edit documentation in R/knn.R
 \name{knn}
 \alias{knn}
-\title{knn function}
+\title{knn}
 \usage{
 knn(x0, x, y, k)
 }
@@ -13,16 +13,16 @@ knn(x0, x, y, k)
 
 \item{y}{prediction values corresponding to observations in x}
 
-\item{k}{the k nearest neighbours to consider}
+\item{k}{k nearest neighbours to consider}
 }
 \value{
 the predicted value corresponding to x0
 }
 \description{
-knn function
+Predict using k nearest neighbour on one variable
 }
 \examples{
-predicting horsepower based on miles per gallon in the ISLR2::Auto dataset
+Predicting horsepower based on miles per gallon in the ISLR2::Auto dataset
 
 prediction <- knn(20, Auto$mpg, Auto$horsepower, 3)
 

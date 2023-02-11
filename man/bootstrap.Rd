@@ -2,7 +2,7 @@
 % Please edit documentation in R/bootstrap.R
 \name{bootstrap}
 \alias{bootstrap}
-\title{bootstrap function}
+\title{bootstrap}
 \usage{
 bootstrap(B, x, replacement = TRUE)
 }
@@ -11,13 +11,13 @@ bootstrap(B, x, replacement = TRUE)
 
 \item{x}{sampling variable}
 
-\item{replacement}{(by default TRUE) whether or not to use replacement}
+\item{replacement}{(default: TRUE) whether or not to use replacement}
 }
 \value{
 sampling distribution
 }
 \description{
-bootstrap function
+Resampling using the bootstrap method
 }
 \examples{
 estimating population distribution of mpg using the Auto dataset from the ISLR2 package
