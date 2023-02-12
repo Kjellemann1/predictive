@@ -43,7 +43,7 @@ Resampling using the bootstrap method
 - replacement : (default: TRUE) whether or not to use replacement  
 
 ### **confusion_matrix()**
-General function that returns a confusion matrix  
+Simplifies making a confusion matrix  
 *confusion_matrix(test_y, predictions, margin = 1)*  
 - test_y : column from test dataframe you are trying to predict
 - predictions : vector containing predictions
