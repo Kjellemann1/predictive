@@ -36,7 +36,7 @@ Resampling using the bootstrap method
 - replacement : (default: TRUE) whether or not to use replacement  
 
 ### **split_train_test()**
-Split dataframe into training and test data  
+Split dataframe into train and test data  
 *split_train_test(df, train_frac, keep_id = TRUE)*
 - df : dataframe you want to split
 - train_frac : the fraction of the data you want in train
