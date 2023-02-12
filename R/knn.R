@@ -18,7 +18,7 @@
 #' @name knn
 knn <- function(x0, x, y, k) {
 	if (class(y) == 'numeric' || class(y) == 'int') {
-		return(base::mean(y[base::order(base::abs(x0-x))[1:k]]))
+		return(base::as.numeric(base::mean(y[base::order(base::abs(x0-x))[1:k]])))
 	} else {
 		return(base::names(base::sort(base::table(y[base::order(base::abs(x0-x))[1:k]]),decreasing=TRUE)[1]))
 	}
