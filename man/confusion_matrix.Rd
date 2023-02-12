@@ -28,7 +28,7 @@ Returns a confusion matrix from a logistic regression
 \examples{
 Predicting default in the Default dataset from the ISLR2 package
 
-regression <- glm(default ~ income + balance, data = train, family= 'binomial')
+regression <- glm(default ~ income + balance, data = train, family = 'binomial')
 confusion_matrix(regression, test, 'default')
 
 }
