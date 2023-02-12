@@ -19,7 +19,9 @@
 knn <- function(x0, x, y, k) {
 	if (class(y) == 'numeric' || class(y) == 'integer') {
 		return(base::mean(y[base::order(base::abs(x0-x))[1:k]]))
-	} else {
+	} else if (class(y) == 'character' || class(y) == 'factor') {
 		return(base::names(base::sort(base::table(y[base::order(base::abs(x0-x))[1:k]]),decreasing=TRUE)[1]))
+	} else {
+		print('input must be one of type: integer/numeric/character/factor')
 	}
 }
