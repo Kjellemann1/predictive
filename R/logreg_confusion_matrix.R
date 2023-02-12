@@ -9,7 +9,7 @@
 #' @param type (default: TRUE) parameter in the predict() function from the stats package
 #' @param margin (default : 1) parameter in the prop.table() function from base R
 #'
-#' @return returns a table in the form of a confusion matrix
+#' @return Returns a table in the form of a confusion matrix
 #'
 #' @examples
 #' Predicting default in the Default dataset from the ISLR2 package

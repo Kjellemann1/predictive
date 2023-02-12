@@ -27,7 +27,7 @@ logreg_confusion_matrix(
 \item{margin}{(default : 1) parameter in the prop.table() function from base R}
 }
 \value{
-returns a table in the form of a confusion matrix
+Returns a table in the form of a confusion matrix
 }
 \description{
 Returns a confusion matrix from a logistic regression

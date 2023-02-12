@@ -42,6 +42,13 @@ Resampling using the bootstrap method
 - x : sampling variable
 - replacement : (default: TRUE) whether or not to use replacement  
 
+### **confusion_matrix()**
+General function that returns a confusion matrix  
+*confusion_matrix(test_y, predictions, margin = 1)*  
+- test_y : column from test dataframe you are trying to predict
+- predictions : vector containing predictions
+- margin : (default : 1) parameter in the prop.table() function from base R
+
 ### **logreg_confusion_matrix()**
 Returns a confusion matrix from a logistic regression  
 *logreg_confusion_matrix(log_reg, test, var, prob = 0.5, type = "response", margin = 1)*  
