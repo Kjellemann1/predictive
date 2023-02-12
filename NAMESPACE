@@ -4,5 +4,4 @@ export(bootstrap)
 export(knn)
 export(knn_test)
 export(split_train_test)
-
 import(dplyr)

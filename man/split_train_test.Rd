@@ -4,12 +4,12 @@
 \alias{split_train_test}
 \title{split_train_test}
 \usage{
-split_train_test(df, train_frac = 0.7, keep_id = TRUE)
+split_train_test(df, train_frac, keep_id = TRUE)
 }
 \arguments{
 \item{df}{dataframe you want to split}
 
-\item{train_frac}{(default: 0.7) the fraction of the data you want in training data}
+\item{train_frac}{the fraction of the data you want in train}
 
 \item{keep_id}{(default: TRUE) whether or not to keep split_train_test_id column in returned dataframes}
 }
@@ -17,12 +17,12 @@ split_train_test(df, train_frac = 0.7, keep_id = TRUE)
 list containing two dataframes: train and test
 }
 \description{
-Split dataframe into training and test data
+Split dataframe into train and test data
 }
 \examples{
 Splitting the dataframe auto, with 80\% in train and 20\% in test
 
-split <- split_train_test(auto, train_frac = 0.8)
+split <- split_train_test(auto, 0.8)
 train <- split$train
 test <- split$test
 
