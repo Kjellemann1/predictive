@@ -1,5 +1,4 @@
 .Rproj.user
 
 *.Rhistory
-testing.R
-testing_local.R
+ignore/

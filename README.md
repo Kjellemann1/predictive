@@ -49,21 +49,10 @@ General function that returns a confusion matrix
 - predictions : vector containing predictions
 - margin : (default : 1) parameter in the prop.table() function from base R
 
-### **logreg_confusion_matrix()**
-Returns a confusion matrix from a logistic regression  
-*logreg_confusion_matrix(log_reg, test, var, prob = 0.5, type = "response", margin = 1)*  
-- log_reg : the regression  
-- test : the test dataframe
-- var : the variable you are trying to predict
-- prob : (default: 0.5) probabilites ABOVE this are predicted TRUE (x > prob => TRUE)
-- type : (default: TRUE) parameter in the predict() function from the stats package
-- margin : (default : 1) parameter in the prop.table() function from base R  
-
 <br></br>
 
 ## **Dependencies**
 ```R
 install.packages('devtools')
 install.packages('dplyr')
-install.packages('stats)
 ```
