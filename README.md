@@ -12,6 +12,13 @@ devtools::install_github('Kjellemann1/predictive')
 
 ## **Functions**  
 
+### **split_train_test()**
+Split dataframe into train and test data  
+*split_train_test(df, train_frac, keep_id = TRUE)*
+- df : dataframe you want to split
+- train_frac : the fraction of the data you want in train
+- keep_id : (default: TRUE) whether or not to keep split_train_test_id column in returned dataframes 
+
 ### **knn()**  
 Predict using k nearest neighbour on one variable  
 *knn(x0, x, y, k)*  
@@ -35,12 +42,15 @@ Resampling using the bootstrap method
 - x : sampling variable
 - replacement : (default: TRUE) whether or not to use replacement  
 
-### **split_train_test()**
-Split dataframe into train and test data  
-*split_train_test(df, train_frac, keep_id = TRUE)*
-- df : dataframe you want to split
-- train_frac : the fraction of the data you want in train
-- keep_id : (default: TRUE) whether or not to keep split_train_test_id column in returned dataframes  
+### **confusion_matrix()**
+Returns a confusion matrix from a logistic regression  
+*confusion_matrix(log_reg, test, var, prob = 0.5, type = "response", margin = 1)*  
+- log_reg : the regression  
+- test : the test dataframe
+- var : the variable you are trying to predict
+- prob : (default: 0.5) probabilites ABOVE this are predicted TRUE (x > prob => TRUE)
+- type : (default: TRUE) parameter in the predict() function from the stats package
+- margin : (default : 1) parameter in the prop.table() function from base R  
 
 <br></br>
 
@@ -48,4 +58,5 @@ Split dataframe into train and test data
 ```R
 install.packages('devtools')
 install.packages('dplyr')
+install.packages('stats)
 ```
