@@ -1,4 +1,4 @@
-#' confusion_matrix
+#' logreg_confusion_matrix
 #'
 #' @description Returns a confusion matrix from a logistic regression
 #'
@@ -15,11 +15,11 @@
 #' Predicting default in the Default dataset from the ISLR2 package
 #'
 #' regression <- glm(default ~ income + balance, data = train, family = 'binomial')
-#' confusion_matrix(regression, test, 'default')
+#' logreg_confusion_matrix(regression, test, 'default')
 #'
 #' @export
 #' @import stats
-#' @name confusion_matrix
-confusion_matrix <- function(log_reg, test, var, prob = 0.5, type = 'response', margin = 1) {
+#' @name logreg_confusion_matrix
+logreg_confusion_matrix <- function(log_reg, test, var, prob = 0.5, type = 'response', margin = 1) {
 	return(base::prop.table(base::table(base::unlist(test[var]), stats::predict(logreg, newdata = test, type = type) > prob), margin = margin))
 }
