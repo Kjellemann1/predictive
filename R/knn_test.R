@@ -17,8 +17,8 @@
 #' @export
 #' @name knn_test
 knn_test <- function(test_x0, train_x, train_y, k) {
-	predictions <- base::rep(0, base::NROW(test))
-	for (i in 1:base::NROW(test)) {
+	predictions <- base::rep(0, base::NROW(test_x0))
+	for (i in 1:base::NROW(test_x0)) {
 		predictions[i] <- predictive::knn(test_x0[i], train_x, train_y, k)
 	}
 	return(predictions)
