@@ -24,6 +24,6 @@ Predicting default in the Default dataset from the ISLR2 package
 
 regression <- glm(default ~ income + balance, data = train, family = 'binomial')
 predictions <- predict(regression, newdata = test, type = 'response') > 0.5)
-confusion_matrix(test, 'default', predictions)
+confusion_matrix(test$default, predictions)
 
 }
