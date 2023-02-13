@@ -56,3 +56,4 @@ Simplifies making a confusion matrix
 install.packages('devtools')
 install.packages('dplyr')
 ```
+
