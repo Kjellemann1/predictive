@@ -17,7 +17,7 @@ confusion_matrix(test_y, predictions, margin = 1)
 Returns a table in the form of a confusion matrix
 }
 \description{
-General function that returns a confusion matrix
+Simplifies making a confusion matrix
 }
 \examples{
 Predicting default in the Default dataset from the ISLR2 package
