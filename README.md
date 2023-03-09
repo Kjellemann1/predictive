@@ -40,6 +40,7 @@ Resampling using the bootstrap method
 *bootstrap(B, x, replacement = TRUE)*  
 - B : number of samples
 - x : sampling variable
+- quantile : (default: -1) if -1 returns the mean, else returns the quantile specified  
 - replacement : (default: TRUE) whether or not to use replacement  
 
 ### **confusion_matrix()**
