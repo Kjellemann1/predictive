@@ -37,7 +37,7 @@ Calculates predictions for each value in test data using knn()
 
 ### **bootstrap()**
 Resampling using the bootstrap method  
-*bootstrap(B, x, replacement = TRUE)*  
+*bootstrap(B, x, quantile = -1, replacement = TRUE)*  
 - B : number of samples
 - x : sampling variable
 - quantile : (default: -1) if -1 returns the mean, else returns the quantile specified  
