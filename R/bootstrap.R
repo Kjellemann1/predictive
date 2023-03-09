@@ -28,7 +28,7 @@ bootstrap <- function(B, x, quantile = -1, replacement = TRUE) {
 	if (quantile == -1) {
 		for (i in 1:B) {boot[i] <- base::mean(x[base::sample(1:base::NROW(x), replace = replacement)])}
 	} else {
-		for (i in 1:B) {boot[i] <- stats::quantile(x[base::sample(1:base::NROW(x), replace = replacement)], quantile)}
+		for (i in 1:B) {boot[i] <- stats::quantile(x[base::sample(1:base::NROW(x), replace = replacement)], probs = quantile)}
 	}
 	return(boot)
 }
