@@ -25,6 +25,6 @@
 #' @name bootstrap
 #' @export
 bootstrap <- function(B, x, quantile = -1, replacement = TRUE) {
-	.Call('cpp_bootstrap', B, x, quantile, replacement)
+	.Call('Rcpp_bootstrap', B, x, quantile, replacement)
 }
 
