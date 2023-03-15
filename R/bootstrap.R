@@ -20,16 +20,11 @@
 #'
 #' sampling_distribution_99th <- bootstrap(1000, Auto$mpg, 0.99)
 #'
-#' @export
-#' @import stats
+#' @import Rcpp
+#' @useDynLib predictive
 #' @name bootstrap
+#' @export
 bootstrap <- function(B, x, quantile = -1, replacement = TRUE) {
-	boot <- rep(0, B)
-	if (quantile == -1) {
-		for (i in 1:B) {boot[i] <- base::mean(x[base::sample(1:base::NROW(x), replace = replacement)])}
-	} else {
-		for (i in 1:B) {boot[i] <- stats::quantile(x[base::sample(1:base::NROW(x), replace = replacement)], probs = quantile)}
-	}
-	return(boot)
+	.Call('cpp_bootstrap', B, x, quantile, replacement)
 }
 
