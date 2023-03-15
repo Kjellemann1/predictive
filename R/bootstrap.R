@@ -21,7 +21,6 @@
 #' sampling_distribution_99th <- bootstrap(1000, Auto$mpg, 0.99)
 #'
 #' @import Rcpp
-#' @import RcppArmadillo
 #' @name bootstrap
 #' @export
 bootstrap <- function(B, x, quantile = -1, replacement = TRUE) {
