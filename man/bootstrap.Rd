@@ -2,7 +2,7 @@
 \alias{bootstrap}
 \docType{package}
 \title{
-cpp_bootstrap
+bootstrap
 }
 \description{
 Resampling using the bootstrap method
