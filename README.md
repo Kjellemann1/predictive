@@ -1,14 +1,10 @@
 # **predictive**  
-Functions used in Predictive Analytics with R at NHH
-
-<br></br>
+Functions used in Predictive Analytics with R at NHH  
 
 ## **Install**
 ```R
 devtools::install_github('Kjellemann1/predictive')  
-```
-
-<br></br>
+```  
 
 ## **Functions**  
 
