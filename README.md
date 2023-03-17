@@ -44,9 +44,7 @@ Simplifies making a confusion matrix
 *confusion_matrix(test_y, predictions, margin = 1)*  
 - test_y : column from test dataframe you are trying to predict
 - predictions : vector containing predictions
-- margin : (default : 1) parameter in the prop.table() function from base R
-
-<br></br>
+- margin : (default : 1) parameter in the prop.table() function from base R  
 
 ## **Dependencies**
 ```R
