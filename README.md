@@ -56,5 +56,6 @@ Simplifies making a confusion matrix
 ```R
 install.packages('devtools')
 install.packages('dplyr')
+install.packages('Rcpp')
 ```
 
