@@ -51,5 +51,5 @@ Simplifies making a confusion matrix
 install.packages('devtools')
 install.packages('dplyr')
 install.packages('Rcpp')
-```
-
+```  
+Rtools: https://cran.r-project.org/bin/windows/Rtools/
