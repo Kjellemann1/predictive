@@ -3,7 +3,11 @@ Functions used in Predictive Analytics with R at NHH
 
 ## **Install**
 ```R
-devtools::install_github('Kjellemann1/predictive')  
+install.packages(
+  "https://github.com/kjellemann1/predictive/binaries/predictive_1.0.zip", 
+  repos = NULL, 
+  type = "win.binary"
+) 
 ```  
 
 ## **Functions**  
@@ -52,4 +56,3 @@ install.packages('devtools')
 install.packages('dplyr')
 install.packages('Rcpp')
 ```  
-Rtools: https://cran.r-project.org/bin/windows/Rtools/
