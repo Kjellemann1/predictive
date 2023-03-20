@@ -6,6 +6,12 @@ Functions used in Predictive Analytics with R at NHH
 install.packages('https://github.com/Kjellemann1/predictive/releases/download/package_release/predictive_1.0.zip', repos = NULL, type = 'binary')
 ```  
 
+## **Dependencies**
+```R
+install.packages('dplyr')
+install.packages('Rcpp')
+```  
+
 ## **Functions**  
 
 ### **split_train_test()**
@@ -46,8 +52,3 @@ Simplifies making a confusion matrix
 - predictions : vector containing predictions
 - margin : (default : 1) parameter in the prop.table() function from base R  
 
-## **Dependencies**
-```R
-install.packages('dplyr')
-install.packages('Rcpp')
-```  
