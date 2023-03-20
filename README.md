@@ -49,4 +49,5 @@ Simplifies making a confusion matrix
 ## **Dependencies**
 ```R
 install.packages('dplyr')
+install.packages('Rcpp')
 ```  
