@@ -3,11 +3,7 @@ Functions used in Predictive Analytics with R at NHH
 
 ## **Install**
 ```R
-install.packages(
-  "https://github.com/kjellemann1/predictive/binaries/predictive_1.0.zip", 
-  repos = NULL, 
-  type = "win.binary"
-) 
+install.packages('https://github.com/Kjellemann1/predictive/releases/download/package_release/predictive_1.0.zip', repos = NULL, type = 'binary')
 ```  
 
 ## **Functions**  
@@ -52,7 +48,5 @@ Simplifies making a confusion matrix
 
 ## **Dependencies**
 ```R
-install.packages('devtools')
 install.packages('dplyr')
-install.packages('Rcpp')
 ```  
